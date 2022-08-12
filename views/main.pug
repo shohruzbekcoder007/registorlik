@@ -1,0 +1,127 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/semantic.css")
+    link(rel="stylesheet", href="/css/main.css")
+    script(src="/js/jquery.js")
+    script(src="/js/semantic.js")
+    script(src="/js/axios.js")
+    title Document
+  body
+    .ui.top.attached.demo
+      .ui.secondary.menu
+        a.item
+          | Asosiy
+        a.item.active
+          | Registrator
+        
+        .right.menu
+          //- div.item
+          //-   button#test.ui.button.yellow.create_btn Qo'shish
+          //- .item
+          //-   .ui.icon.input
+          //-     input(type='text' placeholder='Search...')
+          a.ui.item(href="/")
+            | Chiqish
+    .asosiy
+      .ui
+        .ui.small.form.form-p
+          .six.fields
+            .field
+              label Qoraqalpog'iston va viloyatlar
+              select#province.ui.fluid.dropdown(name="province" data-soato=`${soato_viloyat}`)
+            .field
+              label Tuma
+              select#district.ui.fluid.dropdown(name="district" data-soato=`${soato_tuman}`)
+            .field
+              label Aholi punkti
+              select#punkt.ui.fluid.dropdown(name="punkt")
+                option(value="")
+            .field
+              label Mahalla
+              select#mfy.ui.fluid.dropdown(name="mfy")
+                option(value="")
+            .field
+              label Ko'cha
+              input#street(type="text" name="street" placeholder="Registorlik uchastkasi raqami")
+            .field
+              label Registorlik uchastkasi raqami
+              input#regnumber(type="number" name="regnumber" placeholder="Registorlik uchastkasi raqami")
+    .col
+      table.ui.celled.table
+        thead
+          tr
+            th T/R
+            th Ko'p qavatli uy yoki hovli raqami
+            th Xonadon yoki nuturarjoy soni(birlik)
+            th Jami yashavochilar soni(kishi)
+            th Yirik shohli qoramollar(bosh)
+            th Shundan: sigirlar(bosh)
+            th Qo'y va echkilar(bosh)
+            th Otlar(bosh)
+            th Parrandalar(bosh), jami
+            th Izoh
+            th Qo'shish
+          tr
+            th A
+            th 1
+            th 2
+            th 3
+            th 4
+            th 5
+            th 6
+            th 7
+            th 8
+            th 9
+            th 10
+        tbody#tablereportbody
+          tr
+            td 
+              .ui.form
+                .field
+                  input#colA(type="number")
+            td
+              .ui.form
+                .field
+                  input#col1(type="text")
+            td
+              .ui.form
+                .field
+                  input#col2(type="number")
+            td 
+              .ui.form
+                .field
+                  input#col3(type="number")
+            td
+              .ui.form
+                .field
+                  input#col4(type="number")
+            td
+              .ui.form
+                .field
+                  input#col5(type="number")
+            td
+              .ui.form
+                .field
+                  input#col6(type="number")
+            td
+              .ui.form
+                .field
+                  input#col7(type="number")
+            td
+              .ui.form
+                .field
+                  input#col8(type="number")
+            td
+              .ui.form
+                .field
+                  input#col9(type="text")
+            td 
+              button#addreport.ui.button Qo'shish
+    script(src="/json/tumanlar.js")
+    script(src="/json/qap.js")
+    script(src="/json/mahalla.js")
+    script(src="/js/main.js")
