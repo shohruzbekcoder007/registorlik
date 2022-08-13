@@ -13,6 +13,22 @@ const RegistorListSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    col0: {
+        type: String, 
+        required: true
+    },
+    col00: {
+        type: String, 
+        required: true
+    },
+    col000: {
+        type: String, 
+        required: true
+    },
+    col0000: {
+        type: String, 
+        required: true
+    },
     colA: {
         type: Number,
         required: true

@@ -842,6 +842,10 @@ let tumanlar = [
         {
             "name": "Chilonzor tumani",
             "soato": "1726294"
+        },
+        {
+            "name": "Qo'mita",
+            "soato": "17"
         }
     ]
 
@@ -873,5 +877,5 @@ let writetodb2 = async () => {
     })
 }
 
-// writetodb1()
-writetodb2()
+writetodb1()
+// writetodb2()

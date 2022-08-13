@@ -13,8 +13,9 @@ html(lang="en")
   body
     .ui.top.attached.demo
       .ui.secondary.menu
-        a.item(href="/xlsx/all")
-          | Юклаб олиш
+        - if(admin)
+          a.item(href="/xlsx/all")
+            | Юклаб олиш
         a.item.active
           | Регистратор
         
