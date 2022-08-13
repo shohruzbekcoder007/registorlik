@@ -34,6 +34,15 @@ router.post('/login', async (req,res) => {
     });
 })
 
+router.get('/refresh', cookieJwtAuth, async (req,res) => {
+    let = user = req.user
+    // return res.send(user);
+    return res.render('main',{
+        soato_viloyat: user.soato.slice(0, 4),
+        soato_tuman: user.soato
+    });
+})
+
 router.post('/createreport', cookieJwtAuth, async (req,res) => {
     console.log(req.body, req.user)
     return res.send("salom");

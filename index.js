@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser")
 const view_routers = require('./routers/view_routers')
 const qap = require('./routers/qap')
 const registor_list = require('./routers/registor_list')
+const download_xlsx_router = require('./routers/download_xlsx_router')
 
 const app = express();
 
@@ -39,9 +40,10 @@ mongoose.connect('mongodb://localhost:27017/registorlik', { useNewUrlParser: tru
   });
 
 // views
-app.use('/', view_routers);
-app.use('/qap', qap);
+app.use('/', view_routers)
+app.use('/qap', qap)
 app.use('/report', registor_list)
+app.use('/xlsx', download_xlsx_router)
 
 // require('./bazaga_loginlar')
 // require('./qap')

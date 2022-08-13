@@ -19,11 +19,11 @@ const RegistorListSchema = new mongoose.Schema({
     },
     col1: {
         type: String,
-        default: ''
+        required: true
     },
     col2: {
-        type: Number,
-        default: 0
+        type: String,
+        default: ''
     },
     col3: {
         type: Number,
@@ -50,6 +50,10 @@ const RegistorListSchema = new mongoose.Schema({
         default: 0
     },
     col9: {
+        type: Number,
+        default: 0
+    },
+    col10: {
         type: String,
         default: ''
     }

@@ -23,3 +23,34 @@ thead {
 .form-p{
     padding: 20px;
 }
+
+.btns{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fields label {
+  font-size: 16px !important;
+}
+
+thead tr th{
+  background-color: #a4bfda87 !important;
+  text-align: center !important;
+}
+
+thead tr th:first-child {
+  width: 100px !important;
+}
+
+.ui.celled.table tr th{
+  border: 1px solid #000;
+}
+
+tbody tr td:first-child {
+  width: 100px !important;
+}
+
+thead tr:nth-child(2) th{
+  height: 30px !important;
+  padding: 0 !important;
+}
