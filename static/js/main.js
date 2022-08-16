@@ -247,8 +247,8 @@ $(document).ready(async function () {
       let lastChild = tb.children[tb.children.length - 1];
       let newtrnumber = +lastChild.getAttribute("data-row");
 
-      let provinceSoato = document.getElementById("province").value;
-      let districtSoato = document.getElementById("district").value;
+      let provinceSoato = document.getElementById("province").value
+      let districtSoato = document.getElementById("district").value
       let punktSoato = document.getElementById("punkt").value;
       let mfySoato = document.getElementById("mfy").value;
       let provinceName = tumanlar.find((o) => o.soato === provinceSoato).nomi;

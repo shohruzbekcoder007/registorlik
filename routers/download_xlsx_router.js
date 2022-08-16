@@ -40,7 +40,9 @@ router.get('/all', async(req, res) => {
 });
 
 router.post('/tuman', async(req, res) => {
+
     let selector = {}
+    console.log(req.body.mfy, req.body.punkt, req.body.district, req.body.province)
     if(req.body.mfy){
         selector.col0000=req.body.mfy
     }
