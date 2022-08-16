@@ -54,9 +54,10 @@ router.post('/tuman', async(req, res) => {
         selector.col0=req.body.province
     }
     // return res.send(selector)
+    let soato = selector.col0000 || selector.col000 || selector.col00 || selector.col0
 
     try{
-        let data2 = await RegistorList.find(selector)
+        let data2 = await RegistorList.find({soato:{$regex: soato}})
  
         var model = mongoXlsx.buildDynamicModel(data2);
         var options =  {
