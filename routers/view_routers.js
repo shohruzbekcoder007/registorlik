@@ -1,10 +1,9 @@
-const express = require('express');
-const router = express.Router();
-const bcrypt = require('bcryptjs');
+const express = require('express')
+const router = express.Router()
+const bcrypt = require('bcryptjs')
 const { cookieJwtAuth } = require('./../middleware/cookieJwtAuth')
 
 const { User } = require('./../models/user');
-const e = require('express');
 
 router.get('/', async (req,res) => {
     return res.render('login',{
@@ -69,6 +68,17 @@ router.post('/createreport', cookieJwtAuth, async (req,res) => {
     return res.send("salom");
 })
 // createreport
+
+router.get('/tuman', cookieJwtAuth, async (req,res) => {
+    let = user = req.user
+    if(user.soato == 17){
+        return res.render('adminworker',{
+            soato_viloyat: 1726,
+            soato_tuman: 1726269,
+            admin: true,
+        });
+    }
+})
 
 
 
