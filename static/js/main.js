@@ -67,99 +67,112 @@ const addRowFunction = () => {
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="colA-1" type="number" data-name="colA-${
+                        <input data-index="g1" id="colA-1" type="number" data-name="colA-${
                           newtrnumber + 1
                         }" value="${newtrnumber + 2}" disabled="">
                         </div>
                       </div>
+                      <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input type="text" class="repeatstreet" value="${document.querySelector("#street").value}" disabled="">
+                        <input data-index="g2" type="text" class="repeatstreet" value="${
+                          document.querySelector("#street").value
+                        }" disabled="">
                         </div>
                       </div>
+                      <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col1-1" type="text" data-name="col1-${
+                        <input data-index="g3" id="col1-1" type="text" data-name="col1-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col2-1" type="number" data-name="col2-${
+                        <input data-index="g4" id="col2-1" type="number" data-name="col2-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td> 
                     <div class="ui form">
                       <div class="field">
-                        <input id="col3-1" type="number" data-name="col3-${
+                        <input data-index="g5" id="col3-1" type="number" data-name="col3-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col4-1" type="number" data-name="col4-${
+                        <input data-index="g6" id="col4-1" type="number" data-name="col4-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col5-1" type="number" data-name="col5-${
+                        <input data-index="g7" id="col5-1" type="number" data-name="col5-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col6-1" type="number" data-name="col6-${
+                        <input data-index="g8" id="col6-1" type="number" data-name="col6-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col7-1" type="number" data-name="col7-${
+                        <input data-index="g9" id="col7-1" type="number" data-name="col7-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col8-1" type="number" data-name="col8-${
+                        <input data-index="g10" id="col8-1" type="number" data-name="col8-${
                           newtrnumber + 1
                         }">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                   <td>
                     <div class="ui form">
                       <div class="field">
-                        <input id="col9-1" type="text" data-name="col9-${
+                        <input data-index="g11" id="col9-1" type="text" data-name="col9-${
                           newtrnumber + 1
                         }" onkeypress="addRowFunction1(event)">
                       </div>
                     </div>
+                    <span class="span-error"></span>
                   </td>
                 </tr>`;
   $("#tablereportbody").append(newtr);
@@ -213,12 +226,12 @@ $(document).ready(async function () {
     addRowFunction();
   });
 
-  document.querySelector('#street').addEventListener('change', (event) => {
-    let repeatstreets = document.querySelectorAll('.repeatstreet')
-    repeatstreets.forEach(elem => {
-      elem.value = event.target.value
-    })
-  })
+  document.querySelector("#street").addEventListener("change", (event) => {
+    let repeatstreets = document.querySelectorAll(".repeatstreet");
+    repeatstreets.forEach((elem) => {
+      elem.value = event.target.value;
+    });
+  });
 
   $("#saveForm").on("click", async (event) => {
     if (
@@ -226,25 +239,30 @@ $(document).ready(async function () {
       document.querySelector("#street").value == "" ||
       document.querySelector("#regnumber").value == ""
     ) {
-      alert("Ko'cha va Registorlik uchastkasi raqami ni kiritishingiz kerak!!!")
+      alert(
+        "Ko'cha va Registorlik uchastkasi raqami ni kiritishingiz kerak!!!"
+      );
     } else {
       let tb = document.getElementById("tablereportbody");
       let lastChild = tb.children[tb.children.length - 1];
       let newtrnumber = +lastChild.getAttribute("data-row");
 
-      let provinceSoato = document.getElementById("province").value
-      let districtSoato = document.getElementById("district").value
-      let punktSoato = document.getElementById("punkt").value
-      let mfySoato = document.getElementById("mfy").value
-      let provinceName = tumanlar.find((o) => o.soato === provinceSoato).nomi
-      let districtName = tumanlar.find((o) => o.soato === provinceSoato).tumanlar 
-                            .find((o) => o.soato === districtSoato).nomi
-      let punktName = qaps.find((o) => o.soato === districtSoato).mahallalar
-                            .find((o) => o.soato === punktSoato).nomi
-      let mfyName = mfys.find((o) => o.soato === punktSoato).mahallalar
-                            .find((o) => o.soato === mfySoato).nomi
+      let provinceSoato = document.getElementById("province").value;
+      let districtSoato = document.getElementById("district").value;
+      let punktSoato = document.getElementById("punkt").value;
+      let mfySoato = document.getElementById("mfy").value;
+      let provinceName = tumanlar.find((o) => o.soato === provinceSoato).nomi;
+      let districtName = tumanlar
+        .find((o) => o.soato === provinceSoato)
+        .tumanlar.find((o) => o.soato === districtSoato).nomi;
+      let punktName = qaps
+        .find((o) => o.soato === districtSoato)
+        .mahallalar.find((o) => o.soato === punktSoato).nomi;
+      let mfyName = mfys
+        .find((o) => o.soato === punktSoato)
+        .mahallalar.find((o) => o.soato === mfySoato).nomi;
 
-      let nomi = `${provinceName}, ${districtName}, ${punktName}, ${mfyName}`
+      let nomi = `${provinceName}, ${districtName}, ${punktName}, ${mfyName}`;
 
       let request = [];
       for (let i = 0; i <= newtrnumber; i++) {
@@ -270,7 +288,7 @@ $(document).ready(async function () {
           col000: punktName,
           col0000: mfyName,
           colA,
-          col1: nomi+", "+street,
+          col1: nomi + ", " + street,
           col2: col1,
           col3: col2,
           col4: col3,
@@ -282,19 +300,23 @@ $(document).ready(async function () {
           col10: col9,
         });
       }
+
+      
       let response = await axios({
         method: "post",
         url: "/report/addreportmany",
         data: request,
       });
-      if(response.data){
-        let inputs = document.querySelectorAll('input')
-        inputs.forEach(elem => {
-          elem.disabled = true
-        })
+      if (response.data) {
+        let inputs = document.querySelectorAll("input");
+        inputs.forEach((elem) => {
+          elem.disabled = true;
+        });
         document.querySelector("#addRow").disabled = true;
         document.querySelector("#saveForm").disabled = true;
-        $('.btns').append(`<a href="/refresh" class="ui primary button">Янги</a>`)
+        $(".btns").append(
+          `<a href="/refresh" class="ui primary button">Янги</a>`
+        );
       }
     }
   });
