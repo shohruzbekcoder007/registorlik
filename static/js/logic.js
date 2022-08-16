@@ -68,9 +68,12 @@ $(document).ready(function () {
     }
     
     $(document).on("focusout", "input", (event) => {
+        if(event.target.getAttribute("type") == "number"){
+            if(event.target.value != 0){
+                event.target.value = parseInt(event.target.value);
+            }
+        }
         logic_2(6);
-        logic_2(7);
-        logic_2(8);
         savefunction();
     });
 })
