@@ -2,17 +2,10 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="/css/jquery-ui.css")
-    link(rel="stylesheet", href="/css/custom.css")
-    link(rel="stylesheet", href="/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/css/fa_all.css")
-    link(rel="stylesheet", href="/css/font-awesome.min.css")
-    link(rel="stylesheet", href="/css/fontawesome-all.css")
-    link(rel="stylesheet", href="/css/semantic.css")
-    link(rel="stylesheet", href="/css/main.css")
-    link(rel="stylesheet", href="/css/main1.css")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/semantic.css")
+    link(rel="stylesheet" href="/css/main.css")
     script(src="/js/jquery.js")
     script(src="/js/semantic.js")
     script(src="/js/axios.js")
@@ -28,9 +21,10 @@ html(lang="en")
             | Туманлар кесимида юклаб олиш
         a.item.active
           | Регистратор
-        
+        //- a.item(href="/edit")
+        //-   | Тахрирлаш
         .right.menu
-          a.ui.item(href="/")
+          a.ui.item(href="/exit")
             | Чиқиш
     .asosiy
       .ui
@@ -40,11 +34,11 @@ html(lang="en")
               label Регистраторлик участкаси рақами
               input#regnumber(type="number" name="regnumber" placeholder="Регистраторлик участкаси рақами")
             .field
-              label Қорақалпоғистон ва вилоятлар
-              select#province.ui.fluid.dropdown(name="province" data-soato=`${soato_viloyat}`)
+              label Ҳудуд 
+              select#province.ui.fluid.dropdown(name="province" data-soato=`${soato_viloyat}` disabled)
             .field
-              label Туман
-              select#district.ui.fluid.dropdown(name="district" data-soato=`${soato_tuman}`)
+              label Шаҳар ва туман
+              select#district.ui.fluid.dropdown(name="district" data-soato=`${soato_tuman}` disabled)
             .field
               label Аҳоли пункти
               select#punkt.ui.fluid.dropdown(name="punkt")
@@ -63,13 +57,13 @@ html(lang="en")
             th Т/Р
             th Кўча номи
             th Кўп қаватли уй ёки ҳовли рақами
-            th Хонадон ёки нутураржой сони (бирлик)
-            th Жами яшавочилар сони (киши)
-            th Йирик шоҳли қорамоллар (бош)
-            th Шундан: сигирлар (бош)
-            th Қўй ва ечкилар (бош)
-            th Отлар (бош)
-            th Паррандалар (бош), жами
+            th Хонадон ёки нoтурар жой сони (бирлик)
+            th Жами яшoвчилар сони (киши)
+            th Йирик шоxли қорамоллар сони (бош)
+            th Шундан: сигирлар сони (бош)
+            th Қўй ва эчкилар сони (бош)
+            th Отлар сони (бош)
+            th Жами паррандалар сони (бош)
             th Изоҳ
           tr
             th А
@@ -143,10 +137,15 @@ html(lang="en")
             //- td 
               button#addreport.ui.button Qo'shish
       .btns
+        button#reset.ui.red.button
+          | Тозалаш
         button#addRow.ui.secondary.button
           | Қўшиш
         button#saveForm.ui.button
           | Сақлаш
+    .desc-container
+      .description
+        | Эслатма. Регистратор томонидан тўлдирилган “Регистраторлик участкасининг турар жойлар ва бинолар рўйхати” жадвалидаги маълумотлар киритилади. Ушбу жадвал ҳоким ёрдамчиларининг маълумотлари ва бошқа манбалардан фойдаланган ҳолда тўлдирилмасин!
     script(src="/json/tumanlar.js")
     script(src="/json/qap.js")
     script(src="/json/mahalla.js")

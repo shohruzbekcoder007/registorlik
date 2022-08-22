@@ -5,16 +5,12 @@ const RegistorListSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    street: {
-        type: String, 
-        required: true
-    },
     regnubmer: {
         type: Number,
         required: true
     },
     col0: {
-        type: String, 
+        type: String,
         required: true
     },
     col00: {
@@ -26,6 +22,10 @@ const RegistorListSchema = new mongoose.Schema({
         required: true
     },
     col0000: {
+        type: String, 
+        required: true
+    },
+    street: {
         type: String, 
         required: true
     },

@@ -8,6 +8,7 @@ html
 			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 		link(href='//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i' rel='stylesheet')
 		link(href='css/sign_up.css' rel='stylesheet')
+		link(href='css/main.css' rel='stylesheet')
 	body
 		.main-w3layouts.wrapper
 			h1 Login
@@ -15,7 +16,9 @@ html
 				.agileits-top
 					form(action='/login' method='post')
 						input.text.email(type='text' name='name' placeholder='Name' required='')
+						span.span-error #{message}
 						input.text(type='password' name='password' placeholder='Password' required='')
+						span.span-error #{message}
 						input(type='submit' value='LOGIN')
 					p
 			ul.colorlib-bubbles

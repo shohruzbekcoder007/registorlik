@@ -1,24 +1,39 @@
 const express = require('express')
+const jwt = require('jsonwebtoken')
 const router = express.Router()
 const bcrypt = require('bcryptjs')
 const { cookieJwtAuth } = require('./../middleware/cookieJwtAuth')
 
 const { User } = require('./../models/user');
 
-router.get('/', async (req,res) => {
-    return res.render('login',{
-
-    });
+router.get('/', cookieJwtAuth, async (req, res, next) => {
+    let = user = req.user
+    if (user.soato == 17) {
+        return res.render('adminworker', {
+            soato_viloyat: 1726,
+            admin: true,
+        });
+    } else {
+        return res.render('main', {
+            soato_viloyat: user.soato.slice(0, 4),
+            soato_tuman: user.soato,
+            admin: false,
+        });
+    }
 })
 
-router.post('/login', async (req,res) => {
+router.post('/login', async (req, res) => {
     let user = await User.findOne({ name: req.body.name });
     if (!user)
-        return res.status(400).send('Email yoki parol noto\'g\'ri');
-    
+        return res.render('login', {
+            message: 'Email yoki parol noto\'g\'ri'
+        })
+
     const isValidPassword = await bcrypt.compare(req.body.password, user.password);
     if (!isValidPassword)
-        return res.status(400).send('Email yoki parol noto\'g\'ri');
+        return res.render('login', {
+            message: 'Email yoki parol noto\'g\'ri'
+        })
 
     const token = user.generateAuthToken();
     res.cookie("token", token, {
@@ -28,58 +43,63 @@ router.post('/login', async (req,res) => {
         // signed: true
     })
     // return res.send(user);
-    if(user.soato == 17){
-        return res.render('main',{
+    if (user.soato == 17) {
+        return res.render('adminworker', {
             soato_viloyat: 1726,
-            soato_tuman: 1726269,
+            // soato_tuman: 1726269,
             admin: true,
         });
-    }else{
-        return res.render('main',{
+    } else {
+        return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
             admin: false,
         });
     }
-    
+
 })
 
-router.get('/refresh', cookieJwtAuth, async (req,res) => {
+router.get('/refresh', cookieJwtAuth, async (req, res) => {
     let = user = req.user
     // return res.send(user);
-    if(user.soato == 17){
-        return res.render('main',{
+    if (user.soato == 17) {
+        return res.render('adminworker', {
             soato_viloyat: 1726,
-            soato_tuman: 1726269,
+            // soato_tuman: 1726269,
             admin: true,
         });
-    }else{
-        return res.render('main',{
+    } else {
+        return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
             admin: false,
         });
     }
-    
+
 })
 
-router.post('/createreport', cookieJwtAuth, async (req,res) => {
-    console.log(req.body, req.user)
+router.get('/exit', (req, res) => {
+    res.clearCookie("token")
+    return res.render('login', {
+
+    });
+})
+
+router.post('/createreport', cookieJwtAuth, async (req, res) => {
     return res.send("salom");
 })
 // createreport
 
-router.get('/tuman', cookieJwtAuth, async (req,res) => {
+router.get('/tuman', cookieJwtAuth, async (req, res) => {
     let = user = req.user
-    if(user.soato == 17){
-        return res.render('adminworker',{
+    if (user.soato == 17) {
+        return res.render('adminworker', {
             soato_viloyat: 1726,
-            soato_tuman: 1726269,
+            // soato_tuman: 1726269,
             admin: true,
         });
     }
 })
-
 
 
 module.exports = router;
