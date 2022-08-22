@@ -60,7 +60,6 @@ const mahallalarFunc = (mfy = document.getElementById("punkt").value) => {
 };
 
 const addRowFunction = (elem = '') => {
-  console.log(elem);
   let tb = document.getElementById("tablereportbody");
   let lastChild = tb.children[tb.children.length - 1];
   let newtrnumber = +lastChild.getAttribute("data-row");
@@ -317,16 +316,20 @@ $(document).ready(async function () {
   });
 
   $("#reset").on("click", (event) => {
+    let confrimUser = false;
+    confrimUser = confrim('Киритилган малумотлар тозаланишига розимисиз ?')
     let { request, soato } = data_all();
     let inputs = Array.prototype.slice.call(document.getElementsByTagName("input"))
-    inputs.forEach(input => {
-      if (input.getAttribute("data-index") != 'g1') {
-        input.value = null;
+    if(confrimUser){
+      inputs.forEach(input => {
+        if (input.getAttribute("data-index") != 'g1') {
+          input.value = null;
+        }
+      })
+      if (localStorage.getItem(soato) != null) {
+        window.location.href = '/refresh'
+        localStorage.removeItem(soato)
       }
-    })
-    if (localStorage.getItem(soato) != null) {
-      window.location.href = '/refresh'
-      localStorage.removeItem(soato)
     }
   })
 
