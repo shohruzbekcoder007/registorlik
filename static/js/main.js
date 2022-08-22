@@ -317,7 +317,7 @@ $(document).ready(async function () {
 
   $("#reset").on("click", (event) => {
     let confrimUser = false;
-    confrimUser = confrim('Киритилган малумотлар тозаланишига розимисиз ?')
+    confrimUser = confirm('Киритилган малумотлар тозаланишига розимисиз ?')
     let { request, soato } = data_all();
     let inputs = Array.prototype.slice.call(document.getElementsByTagName("input"))
     if(confrimUser){
