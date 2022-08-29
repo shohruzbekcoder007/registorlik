@@ -27,6 +27,7 @@ var modelOrg = [
     { displayName: 'Отлар сони (бош)', access: 'col8', type: 'number' },
     { displayName: 'Жами паррандалар сони (бош), ', access: 'col9', type: 'number' },
     { displayName: 'Изоҳ', access: 'col10', type: 'string' },
+    { displayName: 'Сана', access: 'dateTime', type: 'string' },
 ]
 
 

@@ -4,71 +4,71 @@ let tumanlar = [
         "soato": "1735",
         "tumanlar": [
             {
-                "nomi": "Nukus shahri",
+                "nomi": "Нукус ш.",
                 "soato": "1735401"
             },
             {
-                "nomi": "Amudaryo tumani",
+                "nomi": "Амударё",
                 "soato": "1735204"
             },
             {
-                "nomi": "Beruniy tumani",
+                "nomi": "Беруний",
                 "soato": "1735207"
             },
             {
-                "nomi": "Bo'zatov tumani",
+                "nomi": "Бўзатов ",
                 "soato": "1735209"
             },
             {
-                "nomi": "Qorao'zak tumani",
-                "soato": "1735211"
-            },
-            {
-                "nomi": "Kegeyli tumani",
+                "nomi": "Кегейли",
                 "soato": "1735212"
             },
             {
-                "nomi": "Qo'ng'irot tumani",
-                "soato": "1735215"
-            },
-            {
-                "nomi": "Qanliko'l tumani",
+                "nomi": "Қонликўл",
                 "soato": "1735218"
             },
             {
-                "nomi": "Mo'ynoq tumani",
+                "nomi": "Қораўзак",
+                "soato": "1735211"
+            },
+            {
+                "nomi": "Қўнғирот",
+                "soato": "1735215"
+            },
+            {
+                "nomi": "Мўйноқ",
                 "soato": "1735222"
             },
             {
-                "nomi": "Nukus tumani",
+                "nomi": "Нукус",
                 "soato": "1735225"
             },
             {
-                "nomi": "Taxiatosh tumani",
+                "nomi": "Тахиатош",
                 "soato": "1735228"
             },
             {
-                "nomi": "Taxtako'pir tumani",
+                "nomi": "Тахтакўпир",
                 "soato": "1735230"
             },
             {
-                "nomi": "To'rtko'l tumani",
+                "nomi": "Тўрткўл",
                 "soato": "1735233"
             },
             {
-                "nomi": "Xo'jayli tumani",
+                "nomi": "Хўжайли",
                 "soato": "1735236"
             },
             {
-                "nomi": "Chimboy tumani",
+                "nomi": "Чимбой",
                 "soato": "1735240"
             },
             {
-                "nomi": "Shumanay tumani",
+                "nomi": "Шуманай",
                 "soato": "1735243"
             },
             {
-                "nomi": "Ellikkala tumani",
+                "nomi": "Элликқалъа",
                 "soato": "1735250"
             }
         ]
@@ -78,68 +78,68 @@ let tumanlar = [
         "soato": "1703",
         "tumanlar": [
             {
-                "nomi": "Andijon shahri",
+                "nomi": "Андижон ш.",
                 "soato": "1703401"
             },
             {
-                "nomi": "Xonobod shahri",
+                "nomi": "Хонобод ш.",
                 "soato": "1703408"
             },
             {
-                "nomi": "Oltinko'l tumani",
-                "soato": "1703202"
-            },
-            {
-                "nomi": "Andijon tumani",
+                "nomi": "Андижон",
                 "soato": "1703203"
             },
             {
-                "nomi": "Baliqchi tumani",
-                "soato": "1703206"
-            },
-            {
-                "nomi": "Bo'z tumani",
-                "soato": "1703209"
-            },
-            {
-                "nomi": "Buloqboshi tumani",
-                "soato": "1703210"
-            },
-            {
-                "nomi": "Jalаquduq tumani",
-                "soato": "1703211"
-            },
-            {
-                "nomi": "Izboskan tumani",
-                "soato": "1703214"
-            },
-            {
-                "nomi": "Ulug'nor tumani",
-                "soato": "1703217"
-            },
-            {
-                "nomi": "Qo'rg'ontepa tumani",
-                "soato": "1703220"
-            },
-            {
-                "nomi": "Asaka tumani",
+                "nomi": "Асака",
                 "soato": "1703224"
             },
             {
-                "nomi": "Marxamat tumani",
+                "nomi": "Балиқчи",
+                "soato": "1703206"
+            },
+            {
+                "nomi": "Булоқбоши",
+                "soato": "1703210"
+            },
+            {
+                "nomi": "Бўстон",
+                "soato": "1703209"
+            },
+            {
+                "nomi": "Жалақудуқ",
+                "soato": "1703211"
+            },
+            {
+                "nomi": "Избоскан",
+                "soato": "1703214"
+            },
+            {
+                "nomi": "Қўрғонтепа",
+                "soato": "1703220"
+            },
+            {
+                "nomi": "Мархамат",
                 "soato": "1703227"
             },
             {
-                "nomi": "Shaxrixon tumani",
-                "soato": "1703230"
+                "nomi": "Олтинкўл",
+                "soato": "1703202"
             },
             {
-                "nomi": "Paxtaobod tumani",
+                "nomi": "Пахтаобод",
                 "soato": "1703232"
             },
             {
-                "nomi": "Xo'jaobod tumani",
+                "nomi": "Улуғноp",
+                "soato": "1703217"
+            },
+            {
+                "nomi": "Хўжаобод",
                 "soato": "1703236"
+            },
+            {
+                "nomi": "Шаҳриҳон",
+                "soato": "1703230"
             }
         ]
     },
@@ -148,55 +148,55 @@ let tumanlar = [
         "soato": "1706",
         "tumanlar": [
             {
-                "nomi": "Buxoro shahri",
+                "nomi": "Бухоро ш.",
                 "soato": "1706401"
             },
             {
-                "nomi": "Kogon shahri",
+                "nomi": "Когон ш.",
                 "soato": "1706403"
             },
             {
-                "nomi": "Olot tumani",
-                "soato": "1706204"
-            },
-            {
-                "nomi": "Buxoro tumani",
+                "nomi": "Бухоро",
                 "soato": "1706207"
             },
             {
-                "nomi": "Vobkent tumani",
+                "nomi": "Вобкент",
                 "soato": "1706212"
             },
             {
-                "nomi": "G'ijduvon tumani",
+                "nomi": "Ғиждувон",
                 "soato": "1706215"
             },
             {
-                "nomi": "Kogon tumani",
-                "soato": "1706219"
-            },
-            {
-                "nomi": "Qorako'l tumani",
-                "soato": "1706230"
-            },
-            {
-                "nomi": "Qorovulbozor tumani",
-                "soato": "1706232"
-            },
-            {
-                "nomi": "Peshku tumani",
-                "soato": "1706240"
-            },
-            {
-                "nomi": "Romitan tumani",
-                "soato": "1706242"
-            },
-            {
-                "nomi": "Jondor tumani",
+                "nomi": "Жондоp",
                 "soato": "1706246"
             },
             {
-                "nomi": "Shofirkon tumani",
+                "nomi": "Когон",
+                "soato": "1706219"
+            },
+            {
+                "nomi": "Қоракўл",
+                "soato": "1706230"
+            },
+            {
+                "nomi": "Қоровулбозор",
+                "soato": "1706232"
+            },
+            {
+                "nomi": "Олот",
+                "soato": "1706204"
+            },
+            {
+                "nomi": "Пешку",
+                "soato": "1706240"
+            },
+            {
+                "nomi": "Ромитан",
+                "soato": "1706242"
+            },
+            {
+                "nomi": "Шофиркон",
                 "soato": "1706258"
             }
         ]
@@ -206,55 +206,55 @@ let tumanlar = [
         "soato": "1708",
         "tumanlar": [
             {
-                "nomi": "Jizzax shahri",
+                "nomi": "Жиззах ш.",
                 "soato": "1708401"
             },
             {
-                "nomi": "Arnasoy tumani",
+                "nomi": "Арнасой",
                 "soato": "1708201"
             },
             {
-                "nomi": "Baxmal tumani",
+                "nomi": "Бахмал",
                 "soato": "1708204"
             },
             {
-                "nomi": "G'allaorol tumani",
+                "nomi": "Ғаллаорол",
                 "soato": "1708209"
             },
             {
-                "nomi": "Sharof Rashidov tumani",
-                "soato": "1708212"
-            },
-            {
-                "nomi": "Do'stlik tumani",
+                "nomi": "Дўстлик",
                 "soato": "1708215"
             },
             {
-                "nomi": "Zomin tumani",
-                "soato": "1708218"
-            },
-            {
-                "nomi": "Zarbdor tumani",
+                "nomi": "Зарбдор",
                 "soato": "1708220"
             },
             {
-                "nomi": "Mirzacho'l tumani",
-                "soato": "1708223"
-            },
-            {
-                "nomi": "Zafarobod tumani",
+                "nomi": "Зафаробод",
                 "soato": "1708225"
             },
             {
-                "nomi": "Paxtakor tumani",
+                "nomi": "Зомин",
+                "soato": "1708218"
+            },
+            {
+                "nomi": "Мирзачўл",
+                "soato": "1708223"
+            },
+            {
+                "nomi": "Пахтакор",
                 "soato": "1708228"
             },
             {
-                "nomi": "Forish tumani",
+                "nomi": "Фориш",
                 "soato": "1708235"
             },
             {
-                "nomi": "Yangiobod tumani",
+                "nomi": "Шароф Рашидов (Жиззах)",
+                "soato": "1708212"
+            },
+            {
+                "nomi": "Янгиобод",
                 "soato": "1708237"
             }
         ]
@@ -264,67 +264,63 @@ let tumanlar = [
         "soato": "1710",
         "tumanlar": [
             {
-                "nomi": "Qarshi shahri",
+                "nomi": "Қарши ш.",
                 "soato": "1710401"
             },
             {
-                "nomi": "Shahrisabz shahri",
+                "nomi": "Шаҳрисабз ш.",
                 "soato": "1710405"
             },
             {
-                "nomi": "G'uzor tumani",
+                "nomi": "Ғузор",
                 "soato": "1710207"
             },
             {
-                "nomi": "Dehqonobod tumani",
+                "nomi": "Деҳқонобод",
                 "soato": "1710212"
             },
             {
-                "nomi": "Qamashi tumani",
-                "soato": "1710220"
-            },
-            {
-                "nomi": "Qarshi tumani",
-                "soato": "1710224"
-            },
-            {
-                "nomi": "Koson tumani",
-                "soato": "1710229"
-            },
-            {
-                "nomi": "Kitob tumani",
-                "soato": "1710232"
-            },
-            {
-                "nomi": "Mirishkor tumani",
-                "soato": "1710233"
-            },
-            {
-                "nomi": "Muborak tumani",
-                "soato": "1710234"
-            },
-            {
-                "nomi": "Nishon tumani",
-                "soato": "1710235"
-            },
-            {
-                "nomi": "Kasbi tumani",
+                "nomi": "Касби",
                 "soato": "1710237"
             },
             {
-                "nomi": "Ko'kdala tumani",
-                "soato": "1710240"
+                "nomi": "Китоб",
+                "soato": "1710232"
             },
             {
-                "nomi": "Chiroqchi tumani",
+                "nomi": "Косон",
+                "soato": "1710229"
+            },
+            {
+                "nomi": "Қамаши",
+                "soato": "1710220"
+            },
+            {
+                "nomi": "Қарши",
+                "soato": "1710224"
+            },
+            {
+                "nomi": "Миришкор",
+                "soato": "1710233"
+            },
+            {
+                "nomi": "Муборак",
+                "soato": "1710234"
+            },
+            {
+                "nomi": "Нишон",
+                "soato": "1710235"
+            },
+            {
+                "nomi": "Чироқчи",
                 "soato": "1710242"
             },
             {
-                "nomi": "Shahrisabz tumani",
+                "nomi": "Шаҳрисабз",
                 "soato": "1710245"
             },
             {
-                "nomi": "Yakkabog' tumani",
+                "nomi": "Яккабоғ",
                 "soato": "1710250"
             }
         ]
@@ -334,43 +330,47 @@ let tumanlar = [
         "soato": "1712",
         "tumanlar": [
             {
-                "nomi": "Navoiy shahri",
+                "nomi": "Навоий ш.",
                 "soato": "1712401"
             },
             {
-                "nomi": "Zarafshon shahri",
+                "nomi": "Заpафшон ш.",
                 "soato": "1712408"
             },
             {
-                "nomi": "Konimex tumani",
-                "soato": "1712211"
+                "nomi": "Ғозғон ш.",
+                "soato": "1712412"
             },
             {
-                "nomi": "Qiziltepa tumani",
-                "soato": "1712216"
-            },
-            {
-                "nomi": "Navbahor tumani",
-                "soato": "1712230"
-            },
-            {
-                "nomi": "Karmana tumani",
+                "nomi": "Кармана",
                 "soato": "1712234"
             },
             {
-                "nomi": "Nurota tumani",
+                "nomi": "Конимех",
+                "soato": "1712211"
+            },
+            {
+                "nomi": "Қизилтепа",
+                "soato": "1712216"
+            },
+            {
+                "nomi": "Навбаҳор",
+                "soato": "1712230"
+            },
+            {
+                "nomi": "Нурота",
                 "soato": "1712238"
             },
             {
-                "nomi": "Tomdi tumani",
+                "nomi": "Томди",
                 "soato": "1712244"
             },
             {
-                "nomi": "Uchquduq tumani",
+                "nomi": "Учқудуқ",
                 "soato": "1712248"
             },
             {
-                "nomi": "Xatirchi tumani",
+                "nomi": "Хатирчи",
                 "soato": "1712251"
             }
         ]
@@ -380,59 +380,55 @@ let tumanlar = [
         "soato": "1714",
         "tumanlar": [
             {
-                "nomi": "Namangan shahri",
-                "soato": "1714401"
-            },
-            {
-                "nomi": "Davlatobod shahri",
+                "nomi": "Давлатобод т",
                 "soato": "1714401365"
             },
             {
-                "nomi": "Yangi Namangan shahri",
-                "soato": "1714401367"
+                "nomi": "Наманган ш.",
+                "soato": "1714401"
             },
             {
-                "nomi": "Mingbuloq tumani",
-                "soato": "1714204"
-            },
-            {
-                "nomi": "Kosonsoy tumani",
+                "nomi": "Косонсой",
                 "soato": "1714207"
             },
             {
-                "nomi": "Namangan tumani",
+                "nomi": "Мингбулоқ",
+                "soato": "1714204"
+            },
+            {
+                "nomi": "Наманган",
                 "soato": "1714212"
             },
             {
-                "nomi": "Norin tumani",
+                "nomi": "Норин",
                 "soato": "1714216"
             },
             {
-                "nomi": "Pop tumani",
+                "nomi": "Поп",
                 "soato": "1714219"
             },
             {
-                "nomi": "To'raqo'rg'on tumani",
+                "nomi": "Тўрақўрғон",
                 "soato": "1714224"
             },
             {
-                "nomi": "Uychi tumani",
+                "nomi": "Уйчи",
                 "soato": "1714229"
             },
             {
-                "nomi": "Uchqo'rg'on tumani",
+                "nomi": "Учқўрғон",
                 "soato": "1714234"
             },
             {
-                "nomi": "Chortoq tumani",
+                "nomi": "Чортоқ",
                 "soato": "1714236"
             },
             {
-                "nomi": "Chust tumani",
+                "nomi": "Чуст",
                 "soato": "1714237"
             },
             {
-                "nomi": "Yangiqo'rg'on tumani",
+                "nomi": "Янгиқўрғон",
                 "soato": "1714242"
             }
         ]
@@ -442,68 +438,68 @@ let tumanlar = [
         "soato": "1718",
         "tumanlar": [
             {
-                "nomi": "Samarqand shahri",
+                "nomi": "Самарқанд ш.",
                 "soato": "1718401"
             },
             {
-                "nomi": "Kattaqo'rg'on shahri",
+                "nomi": "Каттақўрғон ш.",
                 "soato": "1718406"
             },
             {
-                "nomi": "Oqdaryo tumani",
-                "soato": "1718203"
-            },
-            {
-                "nomi": "Bulung'ur tumani",
+                "nomi": "Булунғур",
                 "soato": "1718206"
             },
             {
-                "nomi": "Jomboy tumani",
+                "nomi": "Жомбой",
                 "soato": "1718209"
             },
             {
-                "nomi": "Ishtixon tumani",
+                "nomi": "Иштихон",
                 "soato": "1718212"
             },
             {
-                "nomi": "Kattaqo'rg'on tumani",
+                "nomi": "Каттақўрғон",
                 "soato": "1718215"
             },
             {
-                "nomi": "Qo'shrabot tumani",
+                "nomi": "Қўшробод",
                 "soato": "1718216"
             },
             {
-                "nomi": "Narpay tumani",
+                "nomi": "Нарпай",
                 "soato": "1718218"
             },
             {
-                "nomi": "Payariq tumani",
-                "soato": "1718224"
-            },
-            {
-                "nomi": "Pastdarg'om tumani",
-                "soato": "1718227"
-            },
-            {
-                "nomi": "Paxtachi tumani",
-                "soato": "1718230"
-            },
-            {
-                "nomi": "Samarqand tumani",
-                "soato": "1718233"
-            },
-            {
-                "nomi": "Nurobod tumani",
+                "nomi": "Нуробод",
                 "soato": "1718235"
             },
             {
-                "nomi": "Urgut tumani",
-                "soato": "1718236"
+                "nomi": "Оқдарё",
+                "soato": "1718203"
             },
             {
-                "nomi": "Tayloq tumani",
+                "nomi": "Пастдарғом",
+                "soato": "1718227"
+            },
+            {
+                "nomi": "Пахтачи",
+                "soato": "1718230"
+            },
+            {
+                "nomi": "Пойариқ",
+                "soato": "1718224"
+            },
+            {
+                "nomi": "Самарқанд",
+                "soato": "1718233"
+            },
+            {
+                "nomi": "Тойлоқ",
                 "soato": "1718238"
+            },
+            {
+                "nomi": "Ургут",
+                "soato": "1718236"
             }
         ]
     },
@@ -512,59 +508,63 @@ let tumanlar = [
         "soato": "1722",
         "tumanlar": [
             {
-                "nomi": "Termiz shahri",
+                "nomi": "Термиз ш.",
                 "soato": "1722401"
             },
             {
-                "nomi": "Oltinsoy tumani",
-                "soato": "1722201"
-            },
-            {
-                "nomi": "Angor tumani",
+                "nomi": "Ангор",
                 "soato": "1722202"
             },
             {
-                "nomi": "Boysun tumani",
+                "nomi": "Бандихон",
+                "soato": "1722203"
+            },
+            {
+                "nomi": "Бойсун",
                 "soato": "1722204"
             },
             {
-                "nomi": "Muzrabot tumani",
-                "soato": "1722207"
-            },
-            {
-                "nomi": "Denov tumani",
+                "nomi": "Денов",
                 "soato": "1722210"
             },
             {
-                "nomi": "Jarqo'rg'on tumani",
+                "nomi": "Жарқўрғон",
                 "soato": "1722212"
             },
             {
-                "nomi": "Qumqo'rg'on tumani",
-                "soato": "1722214"
-            },
-            {
-                "nomi": "Qiziriq tumani",
+                "nomi": "Қизириқ",
                 "soato": "1722215"
             },
             {
-                "nomi": "Sariosiyo tumani",
+                "nomi": "Қумқўрғон",
+                "soato": "1722214"
+            },
+            {
+                "nomi": "Музробод",
+                "soato": "1722207"
+            },
+            {
+                "nomi": "Олтинсой",
+                "soato": "1722201"
+            },
+            {
+                "nomi": "Сариосиё",
                 "soato": "1722217"
             },
             {
-                "nomi": "Termiz tumani",
+                "nomi": "Термиз",
                 "soato": "1722220"
             },
             {
-                "nomi": "Uzun tumani",
+                "nomi": "Узун",
                 "soato": "1722221"
             },
             {
-                "nomi": "Sherobod tumani",
+                "nomi": "Шеробод",
                 "soato": "1722223"
             },
             {
-                "nomi": "Sho'rchi tumani",
+                "nomi": "Шўрчи",
                 "soato": "1722226"
             }
         ]
@@ -574,47 +574,47 @@ let tumanlar = [
         "soato": "1724",
         "tumanlar": [
             {
-                "nomi": "Guliston shahri",
+                "nomi": "Гулистон ш.",
                 "soato": "1724401"
             },
             {
-                "nomi": "Shirin shahri",
+                "nomi": "Шиpин ш.",
                 "soato": "1724410"
             },
             {
-                "nomi": "Yangiyer shahri",
+                "nomi": "Янгиеp ш.",
                 "soato": "1724413"
             },
             {
-                "nomi": "Oqoltin tumani",
-                "soato": "1724206"
-            },
-            {
-                "nomi": "Boyovut tumani",
+                "nomi": "Боёвут",
                 "soato": "1724212"
             },
             {
-                "nomi": "Sayxunobod tumani",
-                "soato": "1724216"
-            },
-            {
-                "nomi": "Guliston tumani",
+                "nomi": "Гулистон",
                 "soato": "1724220"
             },
             {
-                "nomi": "Sardoba tumani",
-                "soato": "1724226"
-            },
-            {
-                "nomi": "Mirzaobod tumani",
+                "nomi": "Мирзаобод",
                 "soato": "1724228"
             },
             {
-                "nomi": "Sirdaryo tumani",
+                "nomi": "Оқолтин",
+                "soato": "1724206"
+            },
+            {
+                "nomi": "Сайхунобод",
+                "soato": "1724216"
+            },
+            {
+                "nomi": "Сардоба",
+                "soato": "1724226"
+            },
+            {
+                "nomi": "Сирдарё",
                 "soato": "1724231"
             },
             {
-                "nomi": "Xavast tumani",
+                "nomi": "Ховос",
                 "soato": "1724235"
             }
         ]
@@ -624,92 +624,92 @@ let tumanlar = [
         "soato": "1727",
         "tumanlar": [
             {
-                "nomi": "Nurafshon shahri",
+                "nomi": "Нурафшон ш.",
                 "soato": "1727401"
             },
             {
-                "nomi": "Olmaliq shahri",
-                "soato": "1727404"
-            },
-            {
-                "nomi": "Angren shahri",
+                "nomi": "Ангрен ш.",
                 "soato": "1727407"
             },
             {
-                "nomi": "Bekobod shahri",
+                "nomi": "Бекобод ш.",
                 "soato": "1727413"
             },
             {
-                "nomi": "Chirchiq shahri",
-                "soato": "1727419"
+                "nomi": "Олмалиқ ш.",
+                "soato": "1727404"
             },
             {
-                "nomi": "Ohangaron shahri",
+                "nomi": "Оҳангаpон ш.",
                 "soato": "1727415"
             },
             {
-                "nomi": "Yangiyo'l shahri",
+                "nomi": "Чиpчиқ ш.",
+                "soato": "1727419"
+            },
+            {
+                "nomi": "Янгийўл ш.",
                 "soato": "1727424"
             },
             {
-                "nomi": "Oqqo'rg'on tumani",
-                "soato": "1727206"
-            },
-            {
-                "nomi": "Ohangaron tumani",
-                "soato": "1727212"
-            },
-            {
-                "nomi": "Bekobod tumani",
+                "nomi": "Бекобод",
                 "soato": "1727220"
             },
             {
-                "nomi": "Bo'stonliq tumani",
-                "soato": "1727224"
-            },
-            {
-                "nomi": "Bo'ka tumani",
+                "nomi": "Бўка",
                 "soato": "1727228"
             },
             {
-                "nomi": "Qiyichirchiq tumani",
-                "soato": "1727233"
+                "nomi": "Бўстонлиқ",
+                "soato": "1727224"
             },
             {
-                "nomi": "Zangiota tumani",
+                "nomi": "Зангиота",
                 "soato": "1727237"
             },
             {
-                "nomi": "Yuqorichirchiq tumani",
-                "soato": "1727239"
-            },
-            {
-                "nomi": "Qibray tumani",
+                "nomi": "Қибрай",
                 "soato": "1727248"
             },
             {
-                "nomi": "Parkent tumani",
+                "nomi": "Қуйичирчиқ",
+                "soato": "1727233"
+            },
+            {
+                "nomi": "Оққўрғон",
+                "soato": "1727206"
+            },
+            {
+                "nomi": "Оҳангарон",
+                "soato": "1727212"
+            },
+            {
+                "nomi": "Паркент",
                 "soato": "1727249"
             },
             {
-                "nomi": "Pskent tumani",
+                "nomi": "Пскент",
                 "soato": "1727250"
             },
             {
-                "nomi": "O'rtachirchiq tumani",
+                "nomi": "Тошкент",
+                "soato": "1727265"
+            },
+            {
+                "nomi": "Ўртачирчиқ",
                 "soato": "1727253"
             },
             {
-                "nomi": "Chinoz tumani",
+                "nomi": "Чиноз",
                 "soato": "1727256"
             },
             {
-                "nomi": "Yangiyo'l tumani",
-                "soato": "1727259"
+                "nomi": "Юқоричирчиқ",
+                "soato": "1727239"
             },
             {
-                "nomi": "Toshkent tumani",
-                "soato": "1727265"
+                "nomi": "Янгийўл",
+                "soato": "1727259"
             }
         ]
     },
@@ -718,80 +718,80 @@ let tumanlar = [
         "soato": "1730",
         "tumanlar": [
             {
-                "nomi": "Farg'ona shahri",
+                "nomi": "Фарғона ш.",
                 "soato": "1730401"
             },
             {
-                "nomi": "Qo'qon shahri",
-                "soato": "1730405"
-            },
-            {
-                "nomi": "Quvasoy shahri",
+                "nomi": "Қувасой ш.",
                 "soato": "1730408"
             },
             {
-                "nomi": "Marg'ilon shahri",
+                "nomi": "Қўқон ш.",
+                "soato": "1730405"
+            },
+            {
+                "nomi": "Маpғилон ш.",
                 "soato": "1730412"
             },
             {
-                "nomi": "Oltiariq tumani",
-                "soato": "1730203"
-            },
-            {
-                "nomi": "Qo'shtepa tumani",
-                "soato": "1730206"
-            },
-            {
-                "nomi": "Bog'dod tumani",
-                "soato": "1730209"
-            },
-            {
-                "nomi": "Buvayda tumani",
-                "soato": "1730212"
-            },
-            {
-                "nomi": "Beshariq tumani",
+                "nomi": "Бешариқ",
                 "soato": "1730215"
             },
             {
-                "nomi": "Quva tumani",
-                "soato": "1730218"
+                "nomi": "Боғдод",
+                "soato": "1730209"
             },
             {
-                "nomi": "Uchko'prik tumani",
-                "soato": "1730221"
+                "nomi": "Бувайда",
+                "soato": "1730212"
             },
             {
-                "nomi": "Rishton tumani",
-                "soato": "1730224"
-            },
-            {
-                "nomi": "So'x tumani",
-                "soato": "1730226"
-            },
-            {
-                "nomi": "Toshloq tumani",
-                "soato": "1730227"
-            },
-            {
-                "nomi": "O'zbekiston tumani",
-                "soato": "1730230"
-            },
-            {
-                "nomi": "Farg'ona tumani",
-                "soato": "1730233"
-            },
-            {
-                "nomi": "Dang'ara tumani",
+                "nomi": "Данғара",
                 "soato": "1730236"
             },
             {
-                "nomi": "Furqat tumani",
-                "soato": "1730238"
+                "nomi": "Ёзёвон",
+                "soato": "1730242"
             },
             {
-                "nomi": "Yozyovon tumani",
-                "soato": "1730242"
+                "nomi": "Қува",
+                "soato": "1730218"
+            },
+            {
+                "nomi": "Қўштепа",
+                "soato": "1730206"
+            },
+            {
+                "nomi": "Олтиариқ",
+                "soato": "1730203"
+            },
+            {
+                "nomi": "Риштон",
+                "soato": "1730224"
+            },
+            {
+                "nomi": "Сўх",
+                "soato": "1730226"
+            },
+            {
+                "nomi": "Тошлоқ",
+                "soato": "1730227"
+            },
+            {
+                "nomi": "Ўзбекистон",
+                "soato": "1730230"
+            },
+            {
+                "nomi": "Учкўприк",
+                "soato": "1730221"
+            },
+            {
+                "nomi": "Фарғона",
+                "soato": "1730233"
+            },
+            {
+                "nomi": "Фурқат",
+                "soato": "1730238"
             }
         ]
     },
@@ -800,55 +800,55 @@ let tumanlar = [
         "soato": "1733",
         "tumanlar": [
             {
-                "nomi": "Urganch shahri",
+                "nomi": "Урганч ш.",
                 "soato": "1733401"
             },
             {
-                "nomi": "Xiva shahri",
+                "nomi": "Хива ш.",
                 "soato": "1733406"
             },
             {
-                "nomi": "Bog'ot tumani",
+                "nomi": "Боғот",
                 "soato": "1733204"
             },
             {
-                "nomi": "Gurlan tumani",
+                "nomi": "Гурлан",
                 "soato": "1733208"
             },
             {
-                "nomi": "Qo'shko'pir tumani",
+                "nomi": "Қўшкўпир",
                 "soato": "1733212"
             },
             {
-                "nomi": "Urganch tumani",
-                "soato": "1733217"
-            },
-            {
-                "nomi": "Xazorasp tumani",
-                "soato": "1733220"
-            },
-            {
-                "nomi": "Tuproqqala tumani",
+                "nomi": "Тупроққальа",
                 "soato": "1733221"
             },
             {
-                "nomi": "Xonqa tumani",
-                "soato": "1733223"
+                "nomi": "Урганч",
+                "soato": "1733217"
             },
             {
-                "nomi": "Xiva tumani",
+                "nomi": "Хазорасп",
+                "soato": "1733220"
+            },
+            {
+                "nomi": "Хива",
                 "soato": "1733226"
             },
             {
-                "nomi": "Shovot tumani",
+                "nomi": "Хонқа",
+                "soato": "1733223"
+            },
+            {
+                "nomi": "Шовот",
                 "soato": "1733230"
             },
             {
-                "nomi": "Yangiariq tumani",
+                "nomi": "Янгиариқ",
                 "soato": "1733233"
             },
             {
-                "nomi": "Yangibozor tumani",
+                "nomi": "Янгибозор",
                 "soato": "1733236"
             }
         ]
@@ -858,48 +858,52 @@ let tumanlar = [
         "soato": "1726",
         "tumanlar": [
             {
-                "nomi": "Uchtepa tumani",
-                "soato": "1726262"
-            },
-            {
-                "nomi": "Bektemir tumani",
+                "nomi": "Бектемир",
                 "soato": "1726264"
             },
             {
-                "nomi": "Yunusobod tumani",
-                "soato": "1726266"
-            },
-            {
-                "nomi": "Mirzo Ulug'bek tumani",
+                "nomi": "Мирзо Улуғбек",
                 "soato": "1726269"
             },
             {
-                "nomi": "Mirobod tumani",
+                "nomi": "Миробод",
                 "soato": "1726273"
             },
             {
-                "nomi": "Shayxontoxur tumani",
-                "soato": "1726277"
-            },
-            {
-                "nomi": "Olmazor tumani",
+                "nomi": "Олмазор",
                 "soato": "1726280"
             },
             {
-                "nomi": "Sirg'ali tumani",
+                "nomi": "Сирғали",
                 "soato": "1726283"
             },
             {
-                "nomi": "Yakkasaroy tumani",
+                "nomi": "Учтепа",
+                "soato": "1726262"
+            },
+            {
+                "nomi": "Чилонзор",
+                "soato": "1726294"
+            },
+            {
+                "nomi": "Шайхонтохур",
+                "soato": "1726277"
+            },
+            {
+                "nomi": "Юнусобод",
+                "soato": "1726266"
+            },
+            {
+                "nomi": "Яккасарой",
                 "soato": "1726287"
             },
             {
-                "nomi": "Yashnobod tumani",
-                "soato": "1726290"
+                "nomi": "Янгихаёт",
+                "soato": "1726292"
             },
             {
-                "nomi": "Chilonzor tumani",
-                "soato": "1726294"
+                "nomi": "Яшнобод",
+                "soato": "1726290"
             }
         ]
     }

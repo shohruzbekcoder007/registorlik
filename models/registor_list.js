@@ -72,6 +72,14 @@ const RegistorListSchema = new mongoose.Schema({
     col10: {
         type: String,
         default: ''
+    },
+    dateTime: {
+        type: String,
+        default: ''
+    },
+    countSoato: {
+        type: String,
+        required: true
     }
 });
 

@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken')
 const router = express.Router()
 const bcrypt = require('bcryptjs')
 const { cookieJwtAuth } = require('./../middleware/cookieJwtAuth')
+const {RegistorList} = require('./../models/registor_list');
 
 const { User } = require('./../models/user');
 
@@ -14,10 +15,12 @@ router.get('/', cookieJwtAuth, async (req, res, next) => {
             admin: true,
         });
     } else {
+        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
             admin: false,
+            count: Array.isArray(countData) && countData.length,
         });
     }
 })
@@ -50,10 +53,12 @@ router.post('/login', async (req, res) => {
             admin: true,
         });
     } else {
+        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
             admin: false,
+            count: Array.isArray(countData) && countData.length
         });
     }
 
@@ -69,10 +74,12 @@ router.get('/refresh', cookieJwtAuth, async (req, res) => {
             admin: true,
         });
     } else {
+        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
             admin: false,
+            count: Array.isArray(countData) && countData.length,
         });
     }
 

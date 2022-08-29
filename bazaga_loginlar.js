@@ -421,7 +421,7 @@ let tumanlar = [
     { soato: '1735250', name: '173525002', password: 'rhavm6' },
     { soato: '1735401', name: '173540101', password: 'sqkyxd' },
     { soato: '1735401', name: '173540102', password: '3yj8u5' },
-    { soato: '17', name: '1701', password: '123456' }
+    { soato: '17', name: '1701', password: 'sht802' }
 ]
 
 let writetodb1 = async () => {

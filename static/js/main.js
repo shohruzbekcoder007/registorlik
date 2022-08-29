@@ -224,6 +224,8 @@ function data_all() {
         col8: col7,
         col9: col8,
         col10: col9,
+        dateTime: "",
+        countSoato: districtSoato,
       });
     }
   }
@@ -320,7 +322,7 @@ $(document).ready(async function () {
     confrimUser = confirm('Киритилган малумотлар тозаланишига розимисиз ?')
     let { request, soato } = data_all();
     let inputs = Array.prototype.slice.call(document.getElementsByTagName("input"))
-    if(confrimUser){
+    if (confrimUser) {
       inputs.forEach(input => {
         if (input.getAttribute("data-index") != 'g1') {
           input.value = null;
@@ -350,7 +352,13 @@ $(document).ready(async function () {
         "Ko'cha va Registorlik uchastkasi raqami ni kiritishingiz kerak!!!"
       );
     } else {
+      $('#reset').toggle(false);
+
       let { request, soato } = data_all();
+      request.map(elem => {
+        elem.dateTime = new Date().toLocaleString("tr-TR", { dateStyle: "short" });
+      })
+
       let response = await axios({
         method: "post",
         url: "/report/addreportmany",
