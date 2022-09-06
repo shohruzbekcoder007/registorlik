@@ -3,19 +3,27 @@ const jwt = require('jsonwebtoken')
 const router = express.Router()
 const bcrypt = require('bcryptjs')
 const { cookieJwtAuth } = require('./../middleware/cookieJwtAuth')
-const {RegistorList} = require('./../models/registor_list');
+const { RegistorList } = require('./../models/registor_list');
+
+const mfys = require('../dataJSON/mahalla.json')
+const qaps = require('../dataJSON/qap.json')
+const tumanlar = require('../dataJSON/tumanlar.json')
 
 const { User } = require('./../models/user');
 
 router.get('/', cookieJwtAuth, async (req, res, next) => {
     let = user = req.user
     if (user.soato == 17) {
-        return res.render('adminworker', {
-            soato_viloyat: 1726,
-            admin: true,
-        });
+
+        res.statusCode = 302;
+        res.setHeader("Location", "http://localhost:8002/");
+        res.end();
+        // return res.render('adminworker', {
+        //     soato_viloyat: 1726,
+        //     admin: true,
+        // });
     } else {
-        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
+        const countData = await RegistorList.find({ countSoato: user.soato }) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
@@ -47,13 +55,17 @@ router.post('/login', async (req, res) => {
     })
     // return res.send(user);
     if (user.soato == 17) {
-        return res.render('adminworker', {
-            soato_viloyat: 1726,
-            // soato_tuman: 1726269,
-            admin: true,
-        });
+        res.statusCode = 302;
+        res.setHeader("Location", "http://localhost:8002/");
+        res.end();
+
+        // return res.render('adminworker', {
+        //     soato_viloyat: 1726,
+        //     // soato_tuman: 1726269,
+        //     admin: true,
+        // });
     } else {
-        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
+        const countData = await RegistorList.find({ countSoato: user.soato }) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
@@ -68,13 +80,17 @@ router.get('/refresh', cookieJwtAuth, async (req, res) => {
     let = user = req.user
     // return res.send(user);
     if (user.soato == 17) {
-        return res.render('adminworker', {
-            soato_viloyat: 1726,
-            // soato_tuman: 1726269,
-            admin: true,
-        });
+        res.statusCode = 302;
+        res.setHeader("Location", "http://localhost:8002/");
+        res.end();
+
+        // return res.render('adminworker', {
+        //     soato_viloyat: 1726,
+        //     // soato_tuman: 1726269,
+        //     admin: true,
+        // });
     } else {
-        const countData = await RegistorList.find({countSoato: user.soato}) || 0;
+        const countData = await RegistorList.find({ countSoato: user.soato }) || 0;
         return res.render('main', {
             soato_viloyat: user.soato.slice(0, 4),
             soato_tuman: user.soato,
@@ -100,12 +116,20 @@ router.post('/createreport', cookieJwtAuth, async (req, res) => {
 router.get('/tuman', cookieJwtAuth, async (req, res) => {
     let = user = req.user
     if (user.soato == 17) {
-        return res.render('adminworker', {
-            soato_viloyat: 1726,
-            // soato_tuman: 1726269,
-            admin: true,
-        });
+        res.statusCode = 302;
+        res.setHeader("Location", "http://localhost:8002/");
+        res.end();
+
+        // return res.render('adminworker', {
+        //     soato_viloyat: 1726,
+        //     // soato_tuman: 1726269,
+        //     admin: true,
+        // });
     }
+})
+
+router.get('/data', (req, res) => {
+    res.send({ mfys, qaps, tumanlar })
 })
 
 

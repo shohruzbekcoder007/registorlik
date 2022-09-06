@@ -1,3 +1,5 @@
+
+
 const qapsFunc = (tuman) => {
   let mahallalar = qaps.find((o) => o.soato === tuman);
   if (mahallalar) {

@@ -32,35 +32,35 @@ var modelOrg = [
 
 
 router.get('/all', async (req, res) => {
-    try {
-        let data2 = await RegistorList.find()
+    // try {
+    //     let data2 = await RegistorList.find()
 
-        var model = mongoXlsx.buildDynamicModel(data2);
+    //     var model = mongoXlsx.buildDynamicModel(data2);
         
-        var options = {
-            save: true,
-            sheetName: [],
-            fileName: "Natijalar" + "-" + new Date().getTime() + ".xlsx",
-            path: "./static/xlsx",
-            defaultSheetName: "Ro'yxatga olish natijalari"
-        }
-        /* Generate Excel */
-        mongoXlsx.mongoData2Xlsx(data2, modelOrg, options, function (err, data2) {
-            console.log('File saved at:', data2.fullPath);
-            //////////////////////////////////////////////////
-            var filename = path.basename(data2.fullPath);
-            // var mimetype = mime.lookup(data2.fullPath);
+    //     var options = {
+    //         save: true,
+    //         sheetName: [],
+    //         fileName: "Natijalar" + "-" + new Date().getTime() + ".xlsx",
+    //         // path: "./dataXLSX",
+    //         defaultSheetName: "Ro'yxatga olish natijalari"
+    //     }
+    //     /* Generate Excel */
+    //     mongoXlsx.mongoData2Xlsx(data2, modelOrg, options, function (err, data2) {
+    //         console.log('File saved at:', data2.fullPath);
+    //         //////////////////////////////////////////////////
+    //         var filename = path.basename(data2.fullPath);
+    //         // var mimetype = mime.lookup(data2.fullPath);
 
-            res.setHeader('Content-disposition', 'attachment; filename=' + filename);
-            // res.setHeader('Content-type', mimetype);
+    //         res.setHeader('Content-disposition', 'attachment; filename=' + filename);
+    //         // res.setHeader('Content-type', mimetype);
 
-            var filestream = fs.createReadStream(data2.fullPath);
-            filestream.pipe(res);
-            //////////////////////////////////////////////////
-        });
-    } catch (err) {
-        res.status(404).send("Tizimda xatolik")
-    }
+    //         var filestream = fs.createReadStream(data2.fullPath);
+    //         filestream.pipe(res);
+    //         //////////////////////////////////////////////////
+    //     });
+    // } catch (err) {
+    //     res.status(404).send("Tizimda xatolik")
+    // }
 });
 
 router.post('/tuman', async (req, res) => {
@@ -89,7 +89,7 @@ router.post('/tuman', async (req, res) => {
             save: true,
             sheetName: [],
             fileName: "Natijalar" + "-" + new Date().getTime() + ".xlsx",
-            path: "./static/xlsx",
+            path: "./dataXLSX",
             defaultSheetName: "Ro'yxatga olish natijalari"
         }
         /* Generate Excel */
